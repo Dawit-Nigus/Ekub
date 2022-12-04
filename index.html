@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ekub</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+  
+<div class="container">
+  <h1 class="title"> Ekub</h1>
+  <div class="enter-options">
+  </div>
+
+  <form>
+    <h1>Please enter data</h1>
+    <input id="name" type="text" placeholder="Name" />
+    <input id="amount" type="number" placeholder="Amount" />
+    <input type="button" class="btn btn-success" value="Save/Show" onclick="insert()" />
+  </form>
+  <h2>Available Options:</h2>
+  <table id="display" style="width: 100%"></table> 
+  <div class="winner-container">
+    <h3 id="winner"></h3>
+  </div>
+  <br><br>
+  <button class="btn btn-success" type="button" onclick="getElementById('winner').innerHTML = getRandom()">Generate Winner!</button>
+  <button class="btn btn-danger" type="button" onclick="getElementById('winner').innerHTML = ''">Clear</button>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+  <!-- <button class="btn btn-success" type="button" onclick="getElementById('myChart').innerHTML = addData()">Chart!</button> -->
+  <canvas id="myChart" style="width:100%;max-width:700px"></canvas>
+
+  </div>
+ 
+  <script src="style.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  
+</body>
+</html>
+

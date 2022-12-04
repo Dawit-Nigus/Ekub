@@ -1,0 +1,103 @@
+
+body {
+  background: black;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+h2 {
+    color: slateblue;
+  text-shadow: 0px 1px #fff
+}
+.title {
+  text-decoration:double;
+  color: darkgreen;
+  text-shadow: 0px 1px #fff;
+}
+#options {
+margin-top: 15px;
+  font-size: 18px;
+  font-weight: 400;
+}
+.container {
+  margin-top: 40px;
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: lightskyblue;
+  padding: 15px 45px;
+  border: 4px double blueviolet;
+  box-shadow: 0px 0px 8px rgba(0,0,0,0.6);
+}
+#winner {
+  color: mediumseagreen;
+  font-size: 55px;
+    animation: blinker 1s linear infinite;
+    text-shadow: 0px 1px #fff;
+}
+.enter-options {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+input {
+  padding: 10px;
+  border: 1px solid #888
+}
+.winner-container {
+  margin-top:25px;
+ width: 100%;
+  padding: 20px;
+    background-color: white;
+  box-shadow: inset 0 0 6px rgba(0,0,0,0.6);
+  border: 1px solid #888
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.btn {
+  appearance: none;
+    -webkit-appearance: none;
+  font-family: sans-serif;
+  cursor: pointer;
+  padding: 12px;
+  min-width: 100px;
+  border: 0px;
+    -webkit-transition: background-color 100ms linear;
+    -ms-transition: background-color 100ms linear;
+     transition: background-color 100ms linear;
+}
+
+.btn-success {
+  background: #2ecc71;
+  color: #ffffff;
+}
+.btn-success:hover {
+  background: #27ae60;
+  color: #ffffff;
+}
+
+.btn-danger {
+  background: #e74c3c;
+  color: #ffffff;
+}
+
+.btn-danger:hover {
+  background: #c0392b;
+  color: #ffffff;
+}
+
+.btn-primary {
+  background: #3498db;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background: #2980b9;
+  color: #ffffff;
+}
+
+table, th, td {
+  border: 1px solid;
+  }
